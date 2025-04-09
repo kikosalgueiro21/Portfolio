@@ -40,7 +40,7 @@ FROM
 GROUP BY server_name
 ORDER BY total_downtime DESC;
 
--- Same but for most downtime
+-- Same but for most  uptime
 SELECT 
     server_name, SUM(total_uptime) AS total_uptime
 FROM
